@@ -1,0 +1,36 @@
+[{
+  "id": 1,
+  "name": "angular",
+  "type": "front-end"
+},
+  {
+    "id": 2,
+    "name": "react",
+    "type": "front-end"
+  },
+  {
+    "id": 3,
+    "name": "java",
+    "type": "back-end"
+  },
+  {
+    "id": 4,
+    "name": "vue",
+    "type": "front-end"
+  },
+  {
+    "id": 5,
+    "name": "node",
+    "type": "back-end"
+  },
+  {
+    "id": 6,
+    "name": "css",
+    "type": "front-end"
+  },
+  {
+    "id": 7,
+    "name": "HTML",
+    "type": "front-end"
+  }
+]

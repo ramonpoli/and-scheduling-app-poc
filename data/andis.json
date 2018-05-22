@@ -1,0 +1,29 @@
+[{
+  "id": 1,
+  "name": "Ray",
+  "role": "product developer",
+  "skills": [
+    "angular", "react", "vue", "css", "HTML", "node", "java"
+  ]
+}, {
+  "id": 2,
+  "name": "Maher",
+  "role": "product developer",
+  "skills": [
+    "angular", "vue", "css", "HTML", "java"
+  ]
+}, {
+  "id": 3,
+  "name": "Josh Laird",
+  "role": "product developer",
+  "skills": [
+    "java", "android"
+  ]
+}, {
+  "id": 4,
+  "name": "Victor",
+  "role": "product analist",
+  "skills": [
+    "UX", "problem solving", "requirements gathering", "user journey", "business process mapping"
+  ]
+}]

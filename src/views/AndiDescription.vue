@@ -18,12 +18,11 @@
             <li>
               <small>Skills:</small>
                 <ul>
-                  <li v-for="skill in andi.skills" :key="skill">
+                  <span class="tag" v-for="skill in andi.skills" :key="skill">
                   {{skill}}
-                  </li>
+                  </span>
                 </ul>
             </li>
-
             <br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
             massa fringilla egestas. Nullam condimentum luctus turpis.
@@ -70,4 +69,9 @@ figure {
   margin-top: 50px;
   margin-left: 20px;
 }
+
+span{
+  margin: 10px;
+}
+
 </style>

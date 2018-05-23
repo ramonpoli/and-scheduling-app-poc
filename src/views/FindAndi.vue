@@ -4,7 +4,7 @@
     <div v-bind:key="tag.id" v-for="tag in tags">
       <tag-element :tag="tag" :tagsToMatch="tagsToMatch"></tag-element>
     </div>
-    <a class="button" v-on:click="findAndi()">Find matching Andi</a>
+
     <div v-for="andiToMatch in foundAndis" :key="andiToMatch.id">
       <AndiDescription :andi="andiToMatch.andiWithMatchingSkills"/>
     </div>

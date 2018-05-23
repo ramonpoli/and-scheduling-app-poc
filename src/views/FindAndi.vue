@@ -1,11 +1,15 @@
 <template>
   <div class="find-andi">
     <h1>This is the find ANDi page</h1>
-    <div v-bind:key="tag.id" v-for="tag in tags">
-      <tag-element :tag="tag"></tag-element>
+      <div>
+      <ul>
+        <li v-bind:key="tag.id" v-for="tag in tags">
+          <tag-element :tag="tag"></tag-element>
+        </li>
+      </ul>
     </div>
     <div v-for="andi in andis" :key="andi.id">
-      <AndiDescription :andi="andi"/>
+          <AndiDescription :andi="andi"/>
     </div>
   </div>
 </template>
@@ -28,3 +32,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+</style>

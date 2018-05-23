@@ -8,14 +8,26 @@
       </div>
       <div class="media-content">
         <div class="content">
-          <p>
-            <strong>{{andi.name}}</strong>
-            <small>@johnsmith</small>
-            <small>31m</small>
+          <ul>
+            <li>
+              <strong>{{andi.name}}</strong>
+            </li>
+            <li>
+              <small>{{andi.role}}</small>
+            </li>
+            <li>
+              <small>Skills:</small>
+                <ul>
+                  <li v-for="skill in andi.skills" :key="skill">
+                  {{skill}}
+                  </li>
+                </ul>
+            </li>
+
             <br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
             massa fringilla egestas. Nullam condimentum luctus turpis.
-          </p>
+          </ul>
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
@@ -48,3 +60,14 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+li {
+  list-style-type: none;
+  margin: 0 10px;
+
+}
+figure {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+</style>

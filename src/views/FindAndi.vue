@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="find-andi">
     <h1>This is the find ANDi page</h1>
     <div>
@@ -8,10 +9,11 @@
         </li>
       </ul>
     </div>
-    <div v-for="andiToMatch in foundAndis" :key="andiToMatch.id">
+    <div class="tile is-child notification is-primary" v-for="andiToMatch in foundAndis" :key="andiToMatch.id">
       <AndiDescription :andi="andiToMatch.andiWithMatchingSkills"/>
 
     </div>
+  </div>
   </div>
 </template>
 

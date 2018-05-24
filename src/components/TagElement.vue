@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a class="button is-primary" v-on:click="toggleTag(tag)" :class="{ 'is-success': (tagsToMatch.indexOf(tag) > 0) }">{{tag.name}}
+    <a class="button is-primary" v-on:click="toggleTag(tag)" :class="{ 'is-success': (tagsToMatch.indexOf(tag) >= 0) }">{{tag.name}}
     </a>
   </div>
 </template>
@@ -12,8 +12,10 @@ export default {
   },
   methods: {
     toggleTag(tagToToggle) {
-      if (this.tagsToMatch.indexOf(tagToToggle) <= 0) {
+      if (this.tagsToMatch.indexOf(tagToToggle) < 0) {
         this.tagsToMatch.push(tagToToggle);
+      } else {
+        this.tagsToMatch.splice(this.tagsToMatch.indexOf(tagToToggle), 1);
       }
     },
   },

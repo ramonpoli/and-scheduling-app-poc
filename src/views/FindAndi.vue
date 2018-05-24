@@ -1,13 +1,19 @@
 <template>
+  <div>
   <div class="find-andi">
     <h1>This is the find ANDi page</h1>
-    <div v-bind:key="tag.id" v-for="tag in tags">
-      <tag-element :tag="tag" :tagsToMatch="tagsToMatch"></tag-element>
+    <div>
+      <ul>
+        <li v-bind:key="tag.id" v-for="tag in tags">
+          <tag-element :tag="tag" :tagsToMatch="tagsToMatch"></tag-element>
+        </li>
+      </ul>
     </div>
-
-    <div v-for="andiToMatch in foundAndis" :key="andiToMatch.id">
+    <div class="tile is-child notification is-primary" v-for="andiToMatch in foundAndis" :key="andiToMatch.id">
       <AndiDescription :andi="andiToMatch.andiWithMatchingSkills"/>
+
     </div>
+  </div>
   </div>
 </template>
 
@@ -46,3 +52,22 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+h1 {
+
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+ul {
+  list-style-type: none;
+  padding: 0 0 20px;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+</style>

@@ -2,6 +2,7 @@
   "id": 1,
   "name": "Ray",
   "role": "product developer",
+  "img": "https://static.andigital.com/wp-content/uploads/2017/06/08100555/Ramon-Square-300x300.png",
   "skills": [
     "angular", "react", "vue", "css", "HTML", "node", "java"
   ]
@@ -9,6 +10,7 @@
   "id": 2,
   "name": "Maher",
   "role": "product developer",
+  "img": "https://yt3.ggpht.com/a-/AJLlDp114j1D4Dma5CKHd8cajASQAfncThkcf6Bh4w=s900-mo-c-c0xffffffff-rj-k-no",
   "skills": [
     "angular", "vue", "css", "HTML", "java"
   ]
@@ -16,6 +18,7 @@
   "id": 3,
   "name": "Josh Laird",
   "role": "product developer",
+  "img": "https://i.stack.imgur.com/lLHF6.png?s=328&g=1",
   "skills": [
     "java", "android"
   ]
@@ -23,6 +26,7 @@
   "id": 4,
   "name": "Victor",
   "role": "product analist",
+  "img": "https://static.andigital.com/wp-content/uploads/2017/03/08174335/Victor-Square-300x300.png",
   "skills": [
     "UX", "problem solving", "requirements gathering", "user journey", "business process mapping"
   ]

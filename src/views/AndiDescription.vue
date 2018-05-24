@@ -3,19 +3,30 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+          <img v-bind:src="andi.img">
         </figure>
       </div>
       <div class="media-content">
         <div class="content">
-          <p>
-            <strong>{{andi.name}}</strong>
-            <small>@johnsmith</small>
-            <small>31m</small>
+          <ul>
+            <li>
+              <strong>{{andi.name}}</strong>
+            </li>
+            <li>
+              <small>{{andi.role}}</small>
+            </li>
+            <li>
+              <small>Skills:</small>
+                <ul>
+                  <span class="tag" v-for="skill in andi.skills" :key="skill">
+                  {{skill}}
+                  </span>
+                </ul>
+            </li>
             <br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
             massa fringilla egestas. Nullam condimentum luctus turpis.
-          </p>
+          </ul>
         </div>
         <nav class="level is-mobile">
           <div class="level-left">
@@ -48,3 +59,19 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+li {
+  list-style-type: none;
+  margin: 0 10px;
+
+}
+figure {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+span{
+  margin: 10px;
+}
+
+</style>
